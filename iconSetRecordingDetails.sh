@@ -28,6 +28,6 @@ do
  session=$( curl -s -H "Authorization: LSBasic ${b64auth}" -H "Content-Type: application/json" http://$ip/rest/new | awk -F\" '/session/ { print $4 }' 2> /dev/null )
 # echo "SESSION is ${session}"
 
-curl -H "Authorization: LSBasic ${b64auth}" -H "Content-Type: application/json" --data "{\"call\":\"Comm_setStreamingRecordingDetails\",\"params\":{\"pDetails\":{\"bIsStreamingEnabled\":${bIsStreamingEnabled},\"recorderHostName\":\"${recorderHostName}\",\"recorderPort\":\"${recorderPort}\",\"recorderKey\":\"${recorderKey}\",\"eRecordingLayout\":\"${eRecordingLayout}\"}}}" http://${ip}/rest/request/${session} 
+curl -s -H "Authorization: LSBasic ${b64auth}" -H "Content-Type: application/json" --data "{\"call\":\"Comm_setStreamingRecordingDetails\",\"params\":{\"pDetails\":{\"bIsStreamingEnabled\":${bIsStreamingEnabled},\"recorderHostName\":\"${recorderHostName}\",\"recorderPort\":\"${recorderPort}\",\"recorderKey\":\"${recorderKey}\",\"eRecordingLayout\":\"${eRecordingLayout}\"}}}" http://${ip}/rest/request/${session} 
 done <"temp"
 rm temp
