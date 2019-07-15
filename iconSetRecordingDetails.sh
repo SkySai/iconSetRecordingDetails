@@ -6,7 +6,6 @@ recorderHostName=''
 recorderPort=443
 recorderKey=''
 eRecordingLayout='0'
-bIsStatsCollectionEnabled='1'
 if [ "$#" -eq 1 ]; then
     ipFile=$1
 elif [ "$#" -eq 2 ]; then
