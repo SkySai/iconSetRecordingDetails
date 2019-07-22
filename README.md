@@ -10,6 +10,6 @@ You can invoke this script in two ways
 
 
 Notes*
--Customer will need a Linux or MAC machine with CURL utility installed. 
--Password parameter is optional. Script assumes a default password of ‘admin/admin’ if no password parameter is given.
--Filename parameter is mandatory. See ExampleFile.txt for formatting examples. 
+ Customer will need a Linux or MAC machine with CURL utility installed. 
+ Password parameter is optional. Script assumes a default password of ‘admin/admin’ if no password parameter is given.
+ Filename parameter is mandatory. See ExampleFile.txt for formatting examples. 
