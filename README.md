@@ -5,8 +5,8 @@ USAGE:
 You can invoke this script in two ways
 
 
--./iconReboot.sh \<Password\> \<Filename\>  
--./iconReboot.sh \<Filename\>  
+-./iconSetRecordingDetails.sh \<Password\> \<Filename\>  
+-./iconSetRecordingDetails.sh \<Filename\>  
 
 
 Notes*
